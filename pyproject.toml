@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "projectframe"
-version = "1.0.2"
+version = "1.0.4"
 description = "Python package for multi-dimensional tabular data"
 authors = ["Kyle S. Smith <kyle.smith@stjude.org>"]
 maintainers = ["Kyle S. Smith <kyle.smith@stjude.org>"]

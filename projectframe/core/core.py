@@ -226,6 +226,8 @@ class ProjectFrame(object):
             self.anno.loc[:,key] = value
         else:
             self.anno.loc[obs, key] = value
+            # Update obs
+            self.add_obs(obs)
 
 
     def add_intervals(self,

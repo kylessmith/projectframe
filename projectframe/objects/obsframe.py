@@ -116,8 +116,6 @@ class ObsFrame(object):
             self.frames_dict[obs] = MultiFrame()
             self.frames_dict[obs].update(key, values)
 
-        print("updating", obs, key, values)
-
 
     def to_h5(self,
               h5_group: h5py.Group,
@@ -126,7 +124,6 @@ class ObsFrame(object):
         """
 
         # Iterate over obs
-        print("  ", h5_group.name)
         for obs in self.obs:
             print("   ", obs)
             h5_obs_group = h5_group.create_group(obs)
@@ -242,9 +239,7 @@ class ObsIntervalFrame(object):
         """
 
         # Iterate over keys
-        print("  ", h5_group.name)
         for obs in self.obs:
-            print("   ", obs)
             h5_obs_group = h5_group.create_group(obs)
             if len(self.frames_dict[obs]) > 0:
                 self.frames_dict[obs].to_h5(h5_obs_group, compression_opts)

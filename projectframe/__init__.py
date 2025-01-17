@@ -7,7 +7,7 @@ from .objects.obsframe import ObsFrame, ObsIntervalFrame
 
 
 # This is extracted automatically by the top-level setup.py.
-__version__ = '1.0.1'
+__version__ = '1.0.4'
 __author__ = "Kyle S. Smith"
 
 
